@@ -1,0 +1,15 @@
+.header {
+    background: rgb(162, 194, 253);
+    padding: 20px 0;
+    }
+    .header__menu {
+      list-style: none;
+      display: flex;
+      max-width: 500px;
+      justify-content: space-between;
+    }
+    .menu__link{
+      display: block;
+      color: #000;
+      font-size: 22px;
+    }

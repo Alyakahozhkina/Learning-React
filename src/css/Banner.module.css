@@ -1,0 +1,14 @@
+
+.banner {
+    background: url('./../img/react.png') no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    padding: 200px 0;
+  }
+  .banner__text {
+    background: rgba(0, 0, 0, 0.6);
+    font-size: 20px;
+    color: #fff;
+    max-width: 600px;
+    padding: 20px;
+  }
