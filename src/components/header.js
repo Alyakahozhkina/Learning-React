@@ -36,6 +36,9 @@ justify-content: space-between;
 align-items: center;
 `
 
+const Logo = styled.div `
+  width: 100px;
+`
 
 function Header() {
     return (
@@ -43,9 +46,9 @@ function Header() {
       <HeaderMain>
         <div className='container'>
           <HeaderInner>
-            <div className='logo'>
+            <Logo>
               <a href='/'><img src={logo} alt='logo'/></a>
-            </div>
+            </Logo>
                   <NavMenu>
                     <ul>
                       <li><a href='/home'>Home</a></li>

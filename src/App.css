@@ -3,6 +3,16 @@
   margin: 0;
   box-sizing: border-box;
 }
+body, html {
+  height: 100%;
+}
+.ForApp {
+  min-height: 100%;
+    position: relative;
+}
+.App {
+  padding-bottom: 111px;
+}
 .container {
   max-width: 1170px;
   padding: 0px 15px;
@@ -14,31 +24,6 @@ img {
   max-width: 100%;
   object-fit: cover;
 }
-
-
-
-
-
-
-
-
-.logo {
-  width: 100px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .banner__main {
