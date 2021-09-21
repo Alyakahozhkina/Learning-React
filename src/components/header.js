@@ -1,4 +1,5 @@
 import react from 'react';
+import { NavLink } from 'react-router-dom';
 
 import styled from 'styled-components';
 import logo from './../logo.svg';
@@ -25,7 +26,10 @@ ul li a{
     padding: 10px 30px;
     transition: all 0.4s;
   }
-  ul li a:hover{
+ul li a:hover{
+    color:#fff;
+  }
+ul li a.active{
     color:#fff;
   }
 `
@@ -51,10 +55,10 @@ function Header() {
             </Logo>
                   <NavMenu>
                     <ul>
-                      <li><a href='/home'>Home</a></li>
-                      <li><a href='/about'>About</a></li>
-                      <li><a href='#'>News</a></li>
-                      <li><a href='#'>Contacts</a></li>
+                      <li><NavLink exact to ='/' >Home</NavLink></li>
+                      <li><NavLink to ='/about'>About</NavLink></li>
+                      <li><NavLink to ='#'>News</NavLink></li>
+                      <li><NavLink to ='#'>Contacts</NavLink></li>
                     </ul>
                   </NavMenu>
           </HeaderInner>

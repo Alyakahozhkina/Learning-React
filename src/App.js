@@ -5,29 +5,27 @@ import Header from './components/header.js';
 import HomePage from './components/HomePage';
 import About from './components/About';
 import Footer from './components/Footer';
-import {BrowserRouter, Route} from 'react-router-dom';
+import {BrowserRouter, Switch, Route} from 'react-router-dom';
 
 
 
 function App() {
   return (
+    <BrowserRouter>
       <div className="ForApp">
         <div className="App">
-        <BrowserRouter>
+        
           <Header />
-          <Route path='/' component={HomePage} />
-          <Route path='/About' component={About}/>
-          </BrowserRouter>
+          <Switch>
+            <Route exact path='/' component={HomePage} />
+            <Route path='/about' component={About}/>
+          </Switch>
         </div>
         <Footer />
       </div>
+    </BrowserRouter>
   );
 }
 
 export default App;
 
-
-
-
-
-//       
